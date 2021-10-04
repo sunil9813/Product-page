@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Bonik Product</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- OwlCarouse css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!-- OwlCarouse css -->
+
+
+
+  <!-- jquery   -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!-- jquery   -->
+
+</head>
+
+<body>
+  <section class="head" id="head">
+    <div class="container flex1">
+      <div class="logo">
+        <h2>Bonik</h2>
+      </div>
+
+      <div class="search flex">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search and hit enter....">
+        <select>
+          <option>All Category </option>
+          <option>Fashion </option>
+          <option>Electronics </option>
+          <option>Home & Garden </option>
+          <option>Gifts </option>
+          <option>Music </option>
+          <option>Health & Beauty </option>
+          <option>Pets </option>
+          <option>Baby Toys </option>
+        </select>
+      </div>
+
+      <div class="account">
+        <div class="icon">
+          <i class="far fa-user"></i>
+          <i class="far fa-shopping-bag"></i>
+          <span>4</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    window.onscroll = function() {
+      myFunction()
+    };
+
+    var header = document.getElementById("head");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <div class="category flex">
+          <img src="https://img.icons8.com/external-those-icons-fill-those-icons/24/000000/external-app-applications-windows-those-icons-fill-those-icons-5.png" />
+          <select>
+            <option>Category </option>
+            <option>Fashion </option>
+            <option>Electronics </option>
+            <option>Home & Garden </option>
+            <option>Gifts </option>
+            <option>Music </option>
+            <option>Health & Beauty </option>
+            <option>Pets </option>
+            <option>Baby Toys </option>
+          </select>
+        </div>
+
+        <nav>
+          <ul id="menuitem">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="product.html">PRODUCTS</a></li>
+            <li><a href="index.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="account.html">ACCOUNT</a></li>
+          </ul>
+        </nav>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+  </header>
+
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+  </script>
+
+
+
+
+  <section class="home_product">
+    <div class="container flex">
+      <div class="left_one">
+        <div class="box">
+          <div class="img">
+            <img src="image/home1.png" alt="">
+          </div>
+          <div class="text top">
+            <h5>SPECIAL OFFER</h5>
+            <h2> <span>Comfortable</span> original Cotton Sneaker </h2>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">SHOP NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="right_one">
+        <div class="box flex1">
+          <div class="left">
+            <div class="img">
+              <img src="image/home2.png" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <div class="text">
+              <h5>SPECIAL OFFER</h5>
+              <h2> <span>Minimalist</span> genuine Cotton jacket </h2>
+              <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a href="#">SHOP NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box flex1">
+          <div class="right">
+            <div class="text">
+              <h5>SPECIAL OFFER</h5>
+              <h2> <span>stylish</span> genuine comfy t-shirts </h2>
+              <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a href="#">SHOP NOW</a>
+            </div>
+          </div>
+          <div class="left">
+            <div class="img">
+              <img src="image/home3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="offer">
+    <div class="container flex mtop">
+      <div class="left flex1">
+        <div class="box background">
+          <i class="far fa-id-card"></i>
+          <h3>Secure Payment</h3>
+          <p>100% secured payment & privacy</p>
+        </div>
+        <div class="box background">
+          <i class="far fa-comment-alt"></i>
+          <h3>Great Feedback </h3>
+          <p>More than 97% positive & happy customers</p>
+        </div>
+      </div>
+
+      <div class="right background">
+        <div class="box flex">
+          <div class="text">
+            <h5>SEPECIAL OFFER</h5>
+            <h2> <span>$100 Off </span>over $1200 </h2>
+            <p>More than 97% positive & happy customers</p>
+          </div>
+          <div class="img">
+            <img src="image/home4.png" alt="">
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+  <section class="flash Deals">
+    <div class="container mtop">
+      <div class="heading flex1">
+        <h2><i class="fas fa-bolt"></i> flash Deals</h2>
+        <a href="#">View all <i class="fas fa-caret-right"></i></a>
+      </div>
+
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="img">
+            <span>50% off</span>
+            <img src="image/flash-1.png" alt="">
+            <div class="view">
+              <i class="fas fa-eye"></i> <br>
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="text">
+            <h5>Smart Watch Black</h5>
+            <div class="star flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price flex1">
+              <p> $110.00<label> $250.00</label></p>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <span>50% off</span>
+            <img src="image/flash-2.png" alt="">
+            <div class="view">
+              <i class="fas fa-eye"></i> <br>
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="text">
+            <h5>Smart Watch Black</h5>
+            <div class="star flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price flex1">
+              <p> $110.00<label> $250.00</label></p>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <span>50% off</span>
+            <img src="image/flash-3.png" alt="">
+            <div class="view">
+              <i class="fas fa-eye"></i> <br>
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="text">
+            <h5>Smart Watch Black</h5>
+            <div class="star flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price flex1">
+              <p> $110.00<label> $250.00</label></p>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <span>50% off</span>
+            <img src="image/flash-4.png" alt="">
+            <div class="view">
+              <i class="fas fa-eye"></i> <br>
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="text">
+            <h5>Smart Watch Black</h5>
+            <div class="star flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price flex1">
+              <p> $110.00<label> $250.00</label></p>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <span>50% off</span>
+            <img src="image/flash-3.png" alt="">
+            <div class="view">
+              <i class="fas fa-eye"></i> <br>
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+
+          <div class="text">
+            <h5>Smart Watch Black</h5>
+            <div class="star flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price flex1">
+              <p> $110.00<label> $250.00</label></p>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- OwlCarouse js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <!-- OwlCarouse js -->
+
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-arrow-left'></i>", "<i class='far fa-arrow-right'></i>"],
+      responsive: {
+        511: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+  <section class="flash new_arrivals Deals">
+    <div class="container mtop">
+      <div class="heading flex1">
+        <h2 class="flex">
+          <img src="https://img.icons8.com/color-glass/48/000000/new.png" />
+          flash Deals
+        </h2>
+        <a href="#">View all <i class="fas fa-caret-right"></i></a>
+      </div>
+
+
+      <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="item">
+          <div class="img">
+            <img src="image/new1.png" alt="">
+          </div>
+          <div class="text">
+            <h5>Sunglass</h5>
+            <p>$150</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/new2.png" alt="">
+          </div>
+          <div class="text">
+            <h5>Sunglass</h5>
+            <p>$150</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/new3.png" alt="">
+          </div>
+          <div class="text">
+            <h5>Sunglass</h5>
+            <p>$150</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/new4.png" alt="">
+          </div>
+          <div class="text">
+            <h5>Sunglass</h5>
+            <p>$150</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/new5.png" alt="">
+          </div>
+          <div class="text">
+            <h5>Sunglass</h5>
+            <p>$150</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/new3.png" alt="">
+          </div>
+          <div class="text">
+            <h5>Sunglass</h5>
+            <p>$150</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/new4.png" alt="">
+          </div>
+          <div class="text">
+            <h5>Sunglass</h5>
+            <p>$150</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-arrow-left'></i>", "<i class='far fa-arrow-right'></i>"],
+      responsive: {
+        511: {
+          items: 1
+        },
+        768: {
+          items: 4
+        },
+        1000: {
+          items: 6
+        }
+      }
+    })
+  </script>
+
+  <section class="flash new_arrivals deal mtop">
+    <div class="container">
+      <div class="heading">
+        <h2>Deal Of The Week</h2>
+      </div>
+
+      <div class="owl-carousel owl-carousel3 owl-theme">
+        <div class="item">
+          <div class="box flex1">
+            <div class="left">
+              <div class="img">
+                <span>50% OFF</span>
+                <img src="image/d1.png" alt="">
+                <h5>Say Ban Sunglass</h5>
+              </div>
+            </div>
+            <div class="right">
+              <div class="img">
+                <span>50% OFF</span>
+                <img src="image/d2.png" alt="">
+                <h5>Say Ban Sunglass</h5>
+              </div>
+            </div>
+          </div>
+          <div class="box flex1">
+            <div class="left">
+              <div class="img">
+                <span>50% OFF</span>
+                <img src="image/d3.png" alt="">
+                <h5>Say Ban Sunglass</h5>
+              </div>
+            </div>
+            <div class="right">
+              <div class="img">
+                <span>50% OFF</span>
+                <img src="image/d4.png" alt="">
+                <h5>Say Ban Sunglass</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box flex1">
+            <div class="left">
+              <div class="img">
+                <span>50% OFF</span>
+                <img src="image/d1.png" alt="">
+                <h5>Say Ban Sunglass</h5>
+              </div>
+            </div>
+            <div class="right">
+              <div class="img">
+                <span>50% OFF</span>
+                <img src="image/d2.png" alt="">
+                <h5>Say Ban Sunglass</h5>
+              </div>
+            </div>
+          </div>
+          <div class="box flex1">
+            <div class="left">
+              <div class="img">
+                <span>50% OFF</span>
+                <img src="image/d3.png" alt="">
+                <h5>Say Ban Sunglass</h5>
+              </div>
+            </div>
+            <div class="right">
+              <div class="img">
+                <span>50% OFF</span>
+                <img src="image/d4.png" alt="">
+                <h5>Say Ban Sunglass</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box flex1">
+            <div class="left">
+              <div class="img">
+                <span>50% OFF</span>
+                <img src="image/d1.png" alt="">
+                <h5>Say Ban Sunglass</h5>
+              </div>
+            </div>
+            <div class="right">
+              <div class="img">
+                <span>50% OFF</span>
+                <img src="image/d2.png" alt="">
+                <h5>Say Ban Sunglass</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="box flex1">
+            <div class="left">
+              <div class="img">
+                <span>50% OFF</span>
+                <img src="image/d3.png" alt="">
+                <h5>Say Ban Sunglass</h5>
+              </div>
+            </div>
+            <div class="right">
+              <div class="img">
+                <span>50% OFF</span>
+                <img src="image/d4.png" alt="">
+                <h5>Say Ban Sunglass</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel3').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-arrow-left'></i>", "<i class='far fa-arrow-right'></i>"],
+      items: 1,
+    })
+  </script>
+
+
+  <section class="product_page mtop">
+    <div class="container">
+      <div class="item">
+        <div class="content flex">
+          <div class="left">
+            <img src="image/p1.png" alt="">
+          </div>
+          <div class="right mtop">
+            <img src="image/hot.jpg" alt="">
+            <h2> <span>Deal Of The Day</span> </h2>
+            <h2>Rapple Watch Series 4 </h2>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h4>Fresh Deal Every Get It Now!</h4>
+            <div class="time flex">
+              <h3>365 <span>DAYS</span> </h3>
+              <h3>18 <span>HOURS</span> </h3>
+              <h3>15 <span>MINS</span> </h3>
+              <h3>47 <span>SECS</span> </h3>
+            </div>
+            <div class="button flex">
+              <button>BUY NOW</button>
+              <button class="btn"> <i class="fas fa-heart"></i> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="flash trending">
+    <div class="container mtop">
+      <div class="heading flex1">
+        <h2>Trending Items</h2>
+      </div>
+
+      <div class="content flex">
+        <div class="left_one">
+          <div class="item">
+            <div class="img">
+              <img src="image/t1.png" alt="">
+            </div>
+
+            <div class="text top">
+              <h5>Smart Watch Black</h5>
+              <div class="star flex">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price flex1">
+                <p> $110.00 </p>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="right_one">
+          <div class="item">
+            <div class="img">
+              <span>50% off</span>
+              <img src="image/t2.png" alt="">
+              <div class="view">
+                <i class="fas fa-eye"></i> <br>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+
+            <div class="text">
+              <h5>Smart Watch Black</h5>
+              <div class="star flex">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price flex1">
+                <p> $110.00<label> $250.00</label></p>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <span>50% off</span>
+              <img src="image/t3.png" alt="">
+              <div class="view">
+                <i class="fas fa-eye"></i> <br>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+
+            <div class="text">
+              <h5>Smart Watch Black</h5>
+              <div class="star flex">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price flex1">
+                <p> $110.00<label> $250.00</label></p>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <span>50% off</span>
+              <img src="image/t4.png" alt="">
+              <div class="view">
+                <i class="fas fa-eye"></i> <br>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+
+            <div class="text">
+              <h5>Smart Watch Black</h5>
+              <div class="star flex">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price flex1">
+                <p> $110.00<label> $250.00</label></p>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <span>50% off</span>
+              <img src="image/t5.png" alt="">
+              <div class="view">
+                <i class="fas fa-eye"></i> <br>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+
+            <div class="text">
+              <h5>Smart Watch Black</h5>
+              <div class="star flex">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price flex1">
+                <p> $110.00<label> $250.00</label></p>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <span>50% off</span>
+              <img src="image/t6.png" alt="">
+              <div class="view">
+                <i class="fas fa-eye"></i> <br>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+
+            <div class="text">
+              <h5>Smart Watch Black</h5>
+              <div class="star flex">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price flex1">
+                <p> $110.00<label> $250.00</label></p>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <span>50% off</span>
+              <img src="image/t7.png" alt="">
+              <div class="view">
+                <i class="fas fa-eye"></i> <br>
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+
+            <div class="text">
+              <h5>Smart Watch Black</h5>
+              <div class="star flex">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price flex1">
+                <p> $110.00<label> $250.00</label></p>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="delivery mtop">
+    <div class="container">
+      <div class="content grid">
+        <div class="box flex">
+          <div class="img">
+            <i class="far fa-shipping-fast"></i>
+          </div>
+          <div class="text">
+            <h3>Free Delivery</h3>
+            <span>Order over</span>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="img">
+            <i class="far fa-money-check-alt"></i>
+          </div>
+          <div class="text">
+            <h3>Money Gurantee </h3>
+            <span>7 Days Back </span>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="img">
+            <i class="far fa-stopwatch"></i>
+          </div>
+          <div class="text">
+            <h3>365 Days </h3>
+            <span>For free return </span>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="img">
+            <i class="far fa-credit-card"></i>
+          </div>
+          <div class="text">
+            <h3>Payment </h3>
+            <span>Secure System </span>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="img">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="text">
+            <h3>Online support </h3>
+            <span>24/7 </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="newsletter top">
+    <div class="container">
+      <i class="far fa-paper-plane"></i>
+      <h2>Subscribe To Our Newsletter</h2>
+      <p>and receive $20 coupon for the first Shopping</p>
+      <div class="input flex1">
+        <input type="text" placeholder="Enter Your Email Here...">
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container grid  top">
+      <div class="item">
+        <div class="logo">
+          <h2>Bonik</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <div class="box flex1">
+          <div class="app flex">
+            <div class="img">
+              <img src="https://img.icons8.com/color/48/000000/google-play.png" />
+            </div>
+            <div class="text">
+              <small>Get it on</small>
+              <span>Google Play</span>
+            </div>
+          </div>
+          <div class="app flex">
+            <div class="img">
+              <img src="https://img.icons8.com/color/48/000000/apple-app-store--v3.png" />
+            </div>
+            <div class="text">
+              <small>Get it on</small>
+              <span>App Store</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <h3>About Us</h3>
+        <ul>
+          <li>Careers</li>
+          <li>Our Stores</li>
+          <li>Our Cares</li>
+          <li>Terms & Conditions</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Customer Care</h3>
+        <ul>
+          <li> Help Center</li>
+          <li>How to Buy</li>
+          <li> Track Your Order</li>
+          <li> Corporate & Bulk Purchasing</li>
+          <li> Returns & Refunds</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>70 Washington Square South, New York, NY 10012, United States</li>
+          <li>Email: uilib.help@gmail.com</li>
+          <li>Phone: +1 1123 456 780</li>
+        </ul>
+        <div class="icon flex">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-google"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

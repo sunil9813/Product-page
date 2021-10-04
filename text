@@ -1,0 +1,42 @@
+/*----------------color-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+font-family: 'Poppins', sans-serif;
+
+<!-- OwlCarouse js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<!-- OwlCarouse js -->
+
+<!-- OwlCarouse css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+<!-- OwlCarouse css -->
+
+
+
+<!-- jquery   -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<!-- jquery   -->
+
+
+/*----------------font family-----------*/
+
+
+
+/*----------------image-----------*/
+<img src="https://img.icons8.com/color-glass/48/000000/new.png"/>
+<img src="https://img.icons8.com/color/48/000000/google-play.png"/>
+<img src="https://img.icons8.com/color/48/000000/apple-app-store--v3.png"/>
+/*----------------icon-----------*/
+<i class="far fa-id-card"></i>
+<i class="far fa-comment-alt"></i>
+
+<i class="fas fa-bolt"></i>
+<i class="fas fa-caret-right"></i>
+
+
+<i class="far fa-shipping-fast"></i>
+<i class="far fa-money-check-alt"></i>
+<i class="far fa-stopwatch"></i>
+<i class="far fa-credit-card"></i>
+<i class="fas fa-shield-alt"></i>
